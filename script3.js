@@ -346,7 +346,7 @@ answerModalArray.forEach(function (val) {
       }
       playerWins();
       setInterval(() => {
-        val.style.backgroundColor = "black";
+        val.style.backgroundColor = "rgb(2 9 30)";
       }, 1000);
       document.querySelector(`.money--${score}`).classList.add("money-hover");
       document
@@ -355,7 +355,7 @@ answerModalArray.forEach(function (val) {
     } else {
       val.style.backgroundColor = "red";
       setInterval(() => {
-        val.style.backgroundColor = "black";
+        val.style.backgroundColor = "rgb(2 9 30)";
       }, 1000);
       let audioWrong = new Audio("Wrong.mp3");
       audioWrong.play();

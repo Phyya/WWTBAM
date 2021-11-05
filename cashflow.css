@@ -137,12 +137,12 @@
   }
   .round-div {
     font-size: 0.5rem;
-    color: lightgreen;
+    color: white;
     font-size: 24px;
     font-weight: bold;
   }
   .half-option {
-    color: lightgreen;
+    color: white;
     font-size: 16px;
   }
   .play {
@@ -156,6 +156,14 @@
     font-size: 1rem;
     background: white;
   }
+  .title {
+    animation: sliding 3s linear;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    background: none;
+    /* margin-top: 100px; */
+  }
   .score-mode {
     display: flex;
     flex-direction: column;
@@ -168,5 +176,13 @@
     align-items: center;
     justify-content: space-between;
     height: 20%;
+  }
+  @keyframes sliding {
+    from {
+      margin-left: -250px;
+    }
+    to {
+      margin-left: 0;
+    }
   }
 }

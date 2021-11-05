@@ -16,12 +16,14 @@
   width: 100%;
   position: relative;
 }
+
 .title {
   animation: sliding 3s linear;
   color: white;
   text-align: center;
-  font-size: 15px;
-  /* margin-top: 100px; */
+  font-size: 30px;
+  background: rgb(8 18 50);
+  padding-top: 20px;
 }
 @keyframes sliding {
   from {
@@ -35,7 +37,8 @@
   height: 100%;
   width: 100%;
   display: flex;
-  background: black;
+  background: rgb(2 9 30);
+  /* background: black; */
   /* margin: 10px auto; */
 }
 .play-mode {
@@ -132,6 +135,12 @@
   cursor: pointer;
   color: white;
 }
+.round-div:hover {
+  background: rgb(12 21 48);
+  cursor: pointer;
+  color: white;
+  border: 1px solid white;
+}
 .hidden {
   display: none;
 }
@@ -145,12 +154,11 @@
   height: 120px;
   border-radius: 50%;
   border: none;
-  background: grey;
+  background: rgb(21 29 52);
   margin: 30px 0;
   padding: 5px 5px 10px 5px;
   color: white;
   font-size: 0.5rem;
-  color: lightgreen;
   font-size: 24px;
   font-weight: bold;
 }
@@ -172,6 +180,9 @@
   border: none;
   display: flex;
   justify-content: space-evenly;
+}
+.win {
+  border-radius: 14px;
 }
 
 /* MODAL WINDOWS */
@@ -296,5 +307,6 @@
   z-index: 999;
 }
 .money-hover {
-  background: chocolate;
+  background: rgb(2 9 30);
+  color: white;
 }
